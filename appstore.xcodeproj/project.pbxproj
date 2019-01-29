@@ -136,9 +136,7 @@
 		F805350021FC0B020064609D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F805350121FC0B1F0064609D /* ASLargeTitleView.swift */,
-				F81FF8BD21FEDCD600441CD7 /* ASLargeSearchView.swift */,
-				F81FF8C321FEEF7100441CD7 /* ASNavSearchView.swift */,
+				F81FF8C52200370100441CD7 /* TitleView */,
 				F81FF8B421FED6E200441CD7 /* updatecell */,
 				F805350921FC4C760064609D /* gamecell */,
 				F805350821FC4B740064609D /* todaycell */,
@@ -201,6 +199,16 @@
 			path = updatecell;
 			sourceTree = "<group>";
 		};
+		F81FF8C52200370100441CD7 /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				F805350121FC0B1F0064609D /* ASLargeTitleView.swift */,
+				F81FF8BD21FEDCD600441CD7 /* ASLargeSearchView.swift */,
+				F81FF8C321FEEF7100441CD7 /* ASNavSearchView.swift */,
+			);
+			path = TitleView;
+			sourceTree = "<group>";
+		};
 		F864AA5B21EF327D00C08B8F = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				F864AA6721EF327D00C08B8F /* AppDelegate.swift */,
-				F864AA6921EF327D00C08B8F /* ViewController.swift */,
 				F805350321FC0DCD0064609D /* Others */,
 				F80534FD21FC02E30064609D /* Base */,
 				F80534F021FC016C0064609D /* VC */,
@@ -229,6 +236,7 @@
 				F864AA6B21EF327D00C08B8F /* Main.storyboard */,
 				F864AA6E21EF327F00C08B8F /* Assets.xcassets */,
 				F864AA7021EF327F00C08B8F /* LaunchScreen.storyboard */,
+				F864AA6921EF327D00C08B8F /* ViewController.swift */,
 				F864AA7321EF327F00C08B8F /* Info.plist */,
 			);
 			path = appstore;
@@ -492,7 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RK2CXA26G;
 				INFOPLIST_FILE = appstore/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,7 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RK2CXA26G;
 				INFOPLIST_FILE = appstore/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
