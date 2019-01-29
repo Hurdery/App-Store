@@ -7,6 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80534EF21FC014B0064609D /* ASTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534EE21FC014B0064609D /* ASTabBarViewController.swift */; };
+		F80534F221FC01920064609D /* ASBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534F121FC01920064609D /* ASBaseViewController.swift */; };
+		F80534F421FC01B80064609D /* ASTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534F321FC01B80064609D /* ASTodayViewController.swift */; };
+		F80534F621FC01C00064609D /* ASGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534F521FC01C00064609D /* ASGameViewController.swift */; };
+		F80534F821FC01CA0064609D /* ASAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534F721FC01CA0064609D /* ASAppViewController.swift */; };
+		F80534FA21FC01DC0064609D /* ASUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534F921FC01DC0064609D /* ASUpdateViewController.swift */; };
+		F80534FC21FC01E70064609D /* ASSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534FB21FC01E70064609D /* ASSearchViewController.swift */; };
+		F80534FF21FC030A0064609D /* ASBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80534FE21FC030A0064609D /* ASBaseNavController.swift */; };
+		F805350221FC0B1F0064609D /* ASLargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805350121FC0B1F0064609D /* ASLargeTitleView.swift */; };
+		F805350521FC0DE10064609D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805350421FC0DE10064609D /* Const.swift */; };
+		F805350721FC31F80064609D /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805350621FC31F80064609D /* AppUtils.swift */; };
+		F805350B21FC4CCC0064609D /* ASGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805350A21FC4CCC0064609D /* ASGameTableViewCell.swift */; };
+		F805350E21FC51410064609D /* ASGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805350C21FC51410064609D /* ASGameCollectionViewCell.swift */; };
+		F805350F21FC51410064609D /* ASGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F805350D21FC51410064609D /* ASGameCollectionViewCell.xib */; };
+		F805351221FC56F20064609D /* ASGame1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805351021FC56F20064609D /* ASGame1CollectionViewCell.swift */; };
+		F805351321FC56F20064609D /* ASGame1CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F805351121FC56F20064609D /* ASGame1CollectionViewCell.xib */; };
+		F805351721FC5E150064609D /* ASGame1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805351621FC5E150064609D /* ASGame1TableViewCell.swift */; };
+		F805351921FC5E650064609D /* ASGame2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805351821FC5E650064609D /* ASGame2TableViewCell.swift */; };
+		F805351C21FC5E9E0064609D /* ASGame2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805351A21FC5E9E0064609D /* ASGame2CollectionViewCell.swift */; };
+		F805351D21FC5E9E0064609D /* ASGame2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F805351B21FC5E9E0064609D /* ASGame2CollectionViewCell.xib */; };
+		F81FF8A621FEA01000441CD7 /* ASHeadReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8A421FEA01000441CD7 /* ASHeadReusableView.swift */; };
+		F81FF8A721FEA01000441CD7 /* ASHeadReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81FF8A521FEA01000441CD7 /* ASHeadReusableView.xib */; };
+		F81FF8AA21FEA76700441CD7 /* ASGame3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8A821FEA76700441CD7 /* ASGame3TableViewCell.swift */; };
+		F81FF8AB21FEA76700441CD7 /* ASGame3TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81FF8A921FEA76700441CD7 /* ASGame3TableViewCell.xib */; };
+		F81FF8AD21FEA7C000441CD7 /* ASGame4TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8AC21FEA7C000441CD7 /* ASGame4TableViewCell.swift */; };
+		F81FF8AF21FEA7DA00441CD7 /* ASGame5TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8AE21FEA7DA00441CD7 /* ASGame5TableViewCell.swift */; };
+		F81FF8B121FEAE1000441CD7 /* ASGame4TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81FF8B021FEAE1000441CD7 /* ASGame4TableViewCell.xib */; };
+		F81FF8B321FEAE1A00441CD7 /* ASGame5TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81FF8B221FEAE1A00441CD7 /* ASGame5TableViewCell.xib */; };
+		F81FF8B721FED74300441CD7 /* ASUpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8B521FED74300441CD7 /* ASUpdateTableViewCell.swift */; };
+		F81FF8B821FED74300441CD7 /* ASUpdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81FF8B621FED74300441CD7 /* ASUpdateTableViewCell.xib */; };
+		F81FF8BB21FEDB3600441CD7 /* ASUpdate1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8B921FEDB3600441CD7 /* ASUpdate1TableViewCell.swift */; };
+		F81FF8BC21FEDB3600441CD7 /* ASUpdate1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81FF8BA21FEDB3600441CD7 /* ASUpdate1TableViewCell.xib */; };
+		F81FF8BE21FEDCD600441CD7 /* ASLargeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8BD21FEDCD600441CD7 /* ASLargeSearchView.swift */; };
+		F81FF8C421FEEF7100441CD7 /* ASNavSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FF8C321FEEF7100441CD7 /* ASNavSearchView.swift */; };
 		F864AA6821EF327D00C08B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F864AA6721EF327D00C08B8F /* AppDelegate.swift */; };
 		F864AA6A21EF327D00C08B8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F864AA6921EF327D00C08B8F /* ViewController.swift */; };
 		F864AA6D21EF327D00C08B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F864AA6B21EF327D00C08B8F /* Main.storyboard */; };
@@ -19,6 +53,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F80534EE21FC014B0064609D /* ASTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTabBarViewController.swift; sourceTree = "<group>"; };
+		F80534F121FC01920064609D /* ASBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASBaseViewController.swift; sourceTree = "<group>"; };
+		F80534F321FC01B80064609D /* ASTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTodayViewController.swift; sourceTree = "<group>"; };
+		F80534F521FC01C00064609D /* ASGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGameViewController.swift; sourceTree = "<group>"; };
+		F80534F721FC01CA0064609D /* ASAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAppViewController.swift; sourceTree = "<group>"; };
+		F80534F921FC01DC0064609D /* ASUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASUpdateViewController.swift; sourceTree = "<group>"; };
+		F80534FB21FC01E70064609D /* ASSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASSearchViewController.swift; sourceTree = "<group>"; };
+		F80534FE21FC030A0064609D /* ASBaseNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASBaseNavController.swift; sourceTree = "<group>"; };
+		F805350121FC0B1F0064609D /* ASLargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLargeTitleView.swift; sourceTree = "<group>"; };
+		F805350421FC0DE10064609D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		F805350621FC31F80064609D /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		F805350A21FC4CCC0064609D /* ASGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGameTableViewCell.swift; sourceTree = "<group>"; };
+		F805350C21FC51410064609D /* ASGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		F805350D21FC51410064609D /* ASGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASGameCollectionViewCell.xib; sourceTree = "<group>"; };
+		F805351021FC56F20064609D /* ASGame1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGame1CollectionViewCell.swift; sourceTree = "<group>"; };
+		F805351121FC56F20064609D /* ASGame1CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASGame1CollectionViewCell.xib; sourceTree = "<group>"; };
+		F805351621FC5E150064609D /* ASGame1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGame1TableViewCell.swift; sourceTree = "<group>"; };
+		F805351821FC5E650064609D /* ASGame2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGame2TableViewCell.swift; sourceTree = "<group>"; };
+		F805351A21FC5E9E0064609D /* ASGame2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGame2CollectionViewCell.swift; sourceTree = "<group>"; };
+		F805351B21FC5E9E0064609D /* ASGame2CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASGame2CollectionViewCell.xib; sourceTree = "<group>"; };
+		F81FF8A421FEA01000441CD7 /* ASHeadReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASHeadReusableView.swift; sourceTree = "<group>"; };
+		F81FF8A521FEA01000441CD7 /* ASHeadReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASHeadReusableView.xib; sourceTree = "<group>"; };
+		F81FF8A821FEA76700441CD7 /* ASGame3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGame3TableViewCell.swift; sourceTree = "<group>"; };
+		F81FF8A921FEA76700441CD7 /* ASGame3TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASGame3TableViewCell.xib; sourceTree = "<group>"; };
+		F81FF8AC21FEA7C000441CD7 /* ASGame4TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGame4TableViewCell.swift; sourceTree = "<group>"; };
+		F81FF8AE21FEA7DA00441CD7 /* ASGame5TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASGame5TableViewCell.swift; sourceTree = "<group>"; };
+		F81FF8B021FEAE1000441CD7 /* ASGame4TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASGame4TableViewCell.xib; sourceTree = "<group>"; };
+		F81FF8B221FEAE1A00441CD7 /* ASGame5TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASGame5TableViewCell.xib; sourceTree = "<group>"; };
+		F81FF8B521FED74300441CD7 /* ASUpdateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASUpdateTableViewCell.swift; sourceTree = "<group>"; };
+		F81FF8B621FED74300441CD7 /* ASUpdateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASUpdateTableViewCell.xib; sourceTree = "<group>"; };
+		F81FF8B921FEDB3600441CD7 /* ASUpdate1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASUpdate1TableViewCell.swift; sourceTree = "<group>"; };
+		F81FF8BA21FEDB3600441CD7 /* ASUpdate1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASUpdate1TableViewCell.xib; sourceTree = "<group>"; };
+		F81FF8BD21FEDCD600441CD7 /* ASLargeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLargeSearchView.swift; sourceTree = "<group>"; };
+		F81FF8C321FEEF7100441CD7 /* ASNavSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASNavSearchView.swift; sourceTree = "<group>"; };
 		F864AA6421EF327D00C08B8F /* appstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appstore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F864AA6721EF327D00C08B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F864AA6921EF327D00C08B8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +111,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F80534F021FC016C0064609D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F80534F321FC01B80064609D /* ASTodayViewController.swift */,
+				F80534F521FC01C00064609D /* ASGameViewController.swift */,
+				F80534F721FC01CA0064609D /* ASAppViewController.swift */,
+				F80534F921FC01DC0064609D /* ASUpdateViewController.swift */,
+				F80534FB21FC01E70064609D /* ASSearchViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F80534FD21FC02E30064609D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F80534F121FC01920064609D /* ASBaseViewController.swift */,
+				F80534FE21FC030A0064609D /* ASBaseNavController.swift */,
+				F80534EE21FC014B0064609D /* ASTabBarViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F805350021FC0B020064609D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F805350121FC0B1F0064609D /* ASLargeTitleView.swift */,
+				F81FF8BD21FEDCD600441CD7 /* ASLargeSearchView.swift */,
+				F81FF8C321FEEF7100441CD7 /* ASNavSearchView.swift */,
+				F81FF8B421FED6E200441CD7 /* updatecell */,
+				F805350921FC4C760064609D /* gamecell */,
+				F805350821FC4B740064609D /* todaycell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F805350321FC0DCD0064609D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F805350421FC0DE10064609D /* Const.swift */,
+				F805350621FC31F80064609D /* AppUtils.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F805350821FC4B740064609D /* todaycell */ = {
+			isa = PBXGroup;
+			children = (
+				F864AA7921EF333200C08B8F /* oneTableViewCell.swift */,
+				F864AA7A21EF333200C08B8F /* oneTableViewCell.xib */,
+				F864AA7D21EF334000C08B8F /* twoTableViewCell.swift */,
+				F864AA7E21EF334000C08B8F /* twoTableViewCell.xib */,
+				F81FF8A421FEA01000441CD7 /* ASHeadReusableView.swift */,
+				F81FF8A521FEA01000441CD7 /* ASHeadReusableView.xib */,
+			);
+			path = todaycell;
+			sourceTree = "<group>";
+		};
+		F805350921FC4C760064609D /* gamecell */ = {
+			isa = PBXGroup;
+			children = (
+				F805350A21FC4CCC0064609D /* ASGameTableViewCell.swift */,
+				F805350C21FC51410064609D /* ASGameCollectionViewCell.swift */,
+				F805350D21FC51410064609D /* ASGameCollectionViewCell.xib */,
+				F805351621FC5E150064609D /* ASGame1TableViewCell.swift */,
+				F805351021FC56F20064609D /* ASGame1CollectionViewCell.swift */,
+				F805351121FC56F20064609D /* ASGame1CollectionViewCell.xib */,
+				F805351821FC5E650064609D /* ASGame2TableViewCell.swift */,
+				F805351A21FC5E9E0064609D /* ASGame2CollectionViewCell.swift */,
+				F805351B21FC5E9E0064609D /* ASGame2CollectionViewCell.xib */,
+				F81FF8A821FEA76700441CD7 /* ASGame3TableViewCell.swift */,
+				F81FF8A921FEA76700441CD7 /* ASGame3TableViewCell.xib */,
+				F81FF8AC21FEA7C000441CD7 /* ASGame4TableViewCell.swift */,
+				F81FF8B021FEAE1000441CD7 /* ASGame4TableViewCell.xib */,
+				F81FF8AE21FEA7DA00441CD7 /* ASGame5TableViewCell.swift */,
+				F81FF8B221FEAE1A00441CD7 /* ASGame5TableViewCell.xib */,
+			);
+			path = gamecell;
+			sourceTree = "<group>";
+		};
+		F81FF8B421FED6E200441CD7 /* updatecell */ = {
+			isa = PBXGroup;
+			children = (
+				F81FF8B521FED74300441CD7 /* ASUpdateTableViewCell.swift */,
+				F81FF8B621FED74300441CD7 /* ASUpdateTableViewCell.xib */,
+				F81FF8B921FEDB3600441CD7 /* ASUpdate1TableViewCell.swift */,
+				F81FF8BA21FEDB3600441CD7 /* ASUpdate1TableViewCell.xib */,
+			);
+			path = updatecell;
+			sourceTree = "<group>";
+		};
 		F864AA5B21EF327D00C08B8F = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +222,10 @@
 			children = (
 				F864AA6721EF327D00C08B8F /* AppDelegate.swift */,
 				F864AA6921EF327D00C08B8F /* ViewController.swift */,
-				F864AA7921EF333200C08B8F /* oneTableViewCell.swift */,
-				F864AA7A21EF333200C08B8F /* oneTableViewCell.xib */,
-				F864AA7D21EF334000C08B8F /* twoTableViewCell.swift */,
-				F864AA7E21EF334000C08B8F /* twoTableViewCell.xib */,
+				F805350321FC0DCD0064609D /* Others */,
+				F80534FD21FC02E30064609D /* Base */,
+				F80534F021FC016C0064609D /* VC */,
+				F805350021FC0B020064609D /* View */,
 				F864AA6B21EF327D00C08B8F /* Main.storyboard */,
 				F864AA6E21EF327F00C08B8F /* Assets.xcassets */,
 				F864AA7021EF327F00C08B8F /* LaunchScreen.storyboard */,
@@ -102,6 +260,7 @@
 		F864AA5C21EF327D00C08B8F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AS;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = st;
@@ -134,9 +293,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F805350F21FC51410064609D /* ASGameCollectionViewCell.xib in Resources */,
 				F864AA7221EF327F00C08B8F /* LaunchScreen.storyboard in Resources */,
+				F81FF8B821FED74300441CD7 /* ASUpdateTableViewCell.xib in Resources */,
+				F805351321FC56F20064609D /* ASGame1CollectionViewCell.xib in Resources */,
+				F81FF8B321FEAE1A00441CD7 /* ASGame5TableViewCell.xib in Resources */,
 				F864AA6F21EF327F00C08B8F /* Assets.xcassets in Resources */,
 				F864AA7C21EF333200C08B8F /* oneTableViewCell.xib in Resources */,
+				F81FF8AB21FEA76700441CD7 /* ASGame3TableViewCell.xib in Resources */,
+				F805351D21FC5E9E0064609D /* ASGame2CollectionViewCell.xib in Resources */,
+				F81FF8B121FEAE1000441CD7 /* ASGame4TableViewCell.xib in Resources */,
+				F81FF8BC21FEDB3600441CD7 /* ASUpdate1TableViewCell.xib in Resources */,
+				F81FF8A721FEA01000441CD7 /* ASHeadReusableView.xib in Resources */,
 				F864AA6D21EF327D00C08B8F /* Main.storyboard in Resources */,
 				F864AA8021EF334000C08B8F /* twoTableViewCell.xib in Resources */,
 			);
@@ -149,10 +317,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F805350721FC31F80064609D /* AppUtils.swift in Sources */,
 				F864AA7B21EF333200C08B8F /* oneTableViewCell.swift in Sources */,
+				F80534F221FC01920064609D /* ASBaseViewController.swift in Sources */,
+				F805351721FC5E150064609D /* ASGame1TableViewCell.swift in Sources */,
+				F81FF8B721FED74300441CD7 /* ASUpdateTableViewCell.swift in Sources */,
+				F805351921FC5E650064609D /* ASGame2TableViewCell.swift in Sources */,
+				F80534F821FC01CA0064609D /* ASAppViewController.swift in Sources */,
+				F81FF8AF21FEA7DA00441CD7 /* ASGame5TableViewCell.swift in Sources */,
+				F80534F621FC01C00064609D /* ASGameViewController.swift in Sources */,
+				F81FF8A621FEA01000441CD7 /* ASHeadReusableView.swift in Sources */,
+				F81FF8BB21FEDB3600441CD7 /* ASUpdate1TableViewCell.swift in Sources */,
+				F805350B21FC4CCC0064609D /* ASGameTableViewCell.swift in Sources */,
+				F80534FF21FC030A0064609D /* ASBaseNavController.swift in Sources */,
+				F80534FC21FC01E70064609D /* ASSearchViewController.swift in Sources */,
+				F81FF8AA21FEA76700441CD7 /* ASGame3TableViewCell.swift in Sources */,
+				F81FF8C421FEEF7100441CD7 /* ASNavSearchView.swift in Sources */,
 				F864AA6A21EF327D00C08B8F /* ViewController.swift in Sources */,
+				F80534EF21FC014B0064609D /* ASTabBarViewController.swift in Sources */,
+				F805351221FC56F20064609D /* ASGame1CollectionViewCell.swift in Sources */,
+				F81FF8BE21FEDCD600441CD7 /* ASLargeSearchView.swift in Sources */,
+				F805351C21FC5E9E0064609D /* ASGame2CollectionViewCell.swift in Sources */,
+				F805350E21FC51410064609D /* ASGameCollectionViewCell.swift in Sources */,
 				F864AA7F21EF334000C08B8F /* twoTableViewCell.swift in Sources */,
+				F81FF8AD21FEA7C000441CD7 /* ASGame4TableViewCell.swift in Sources */,
+				F805350221FC0B1F0064609D /* ASLargeTitleView.swift in Sources */,
+				F80534FA21FC01DC0064609D /* ASUpdateViewController.swift in Sources */,
 				F864AA6821EF327D00C08B8F /* AppDelegate.swift in Sources */,
+				F80534F421FC01B80064609D /* ASTodayViewController.swift in Sources */,
+				F805350521FC0DE10064609D /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RK2CXA26G;
 				INFOPLIST_FILE = appstore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RK2CXA26G;
 				INFOPLIST_FILE = appstore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
