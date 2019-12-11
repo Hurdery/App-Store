@@ -5,6 +5,8 @@
 [![](https://img.shields.io/badge/language-swift-f48041.svg?style=flat)](https://www.apple.com/)&nbsp; 
 # 演示 
 ![](https://github.com/Hurdery/App-Store/blob/master/screenshot/as.gif) 
+![](https://github.com/Hurdery/App-Store/blob/master/screenshot/md.gif) 
+
 
 # 特性
 - swift4语法，搭建页面基本结构，适合初学者学习
@@ -12,17 +14,20 @@
 - 适配iPhoneX、XS、XR、XSMax
 
 # 功能
-- [x] 各tabbbar主页面基本还原
+- [x] 各tabbbar主页面基本还原 
+- [x] 详情页面基本还原
+
 
 # 系统要求
 - iOS 9.0 or later
-- Xcode 9.0 or later
+- Xcode 11.0 or later
 
 # 持续更新
-明年开春有时间了，会陆续补充详情页等具体页面，欢迎star关注
+年初承诺今年要更详情页，苦于一直没有时间，眼看9102年要过去了，抽空还是更了吧，也不负这几十位道友的支持。 
+更了详情页，你以为就完了？不，还没有，本项目还会继续更新更多细节功能，欢迎持续关注。
 
 # 交流
-本作者swift语言刚刚入门，项目诸多不足之处，欢迎各位高人指点。如有兴趣，可以提issue,抑或直接联系本人QQ: 1589353390 
+如发现有任何问题，或者不明白的，可以提issue,或直接联系本人唯一指定官方QQ: 1589353390 
 
 # 欢迎加入
 如有兴趣者，欢迎加入本项目的编写，一起学习进步。
