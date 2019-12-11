@@ -43,24 +43,24 @@ class ASLargeTitleView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        timeLabel = UILabel(frame: CGRect(x: 30, y: 5, width: 100, height: 15))
+        timeLabel = UILabel(frame: CGRect(x: 30, y: 5, width: 150, height: 15))
         timeLabel.font = UIFont.systemFont(ofSize: 12)
-        timeLabel.text = AppUtils.sharedAppUtils._getCurrentDayAndTime(formatStr: "M月DD日")
+        timeLabel.text = AppUtils.sharedAppUtils._getCurrentDayAndTime(formatStr: "MM月dd日")
         timeLabel.textColor = .lightGray
         addSubview(timeLabel)
         
-        headLabel = UILabel(frame: CGRect(x: 30, y: timeLabel.frame.maxY + 5, width: 100, height: 30))
+        headLabel = UILabel(frame: CGRect(x: 30, y: timeLabel.frame.maxY + 5, width: 100, height: 35))
         headLabel.font = UIFont.boldSystemFont(ofSize: 30)
         headLabel.text = "Today"
         addSubview(headLabel)
         
-        headImage = UIImageView(frame: CGRect(x: screenWidth - 50 - 20, y: 5, width: 50, height: 50))
-        headImage.backgroundColor = commonColor
+        headImage = UIImageView(frame: CGRect(x: SCREENWIDTH - 50 - 20, y: 5, width: 50, height: 50))
+        headImage.backgroundColor = COMMONCOLOR
         AppUtils.sharedAppUtils._clipsViewCorner(headImage, radius: 25)
         addSubview(headImage)
         
-        bottomLine = UIView(frame: CGRect(x: 30, y: self.frame.maxY - 1, width: screenWidth - 60, height: 1))
-        bottomLine.backgroundColor = lineColor
+        bottomLine = UIView(frame: CGRect(x: 30, y: self.frame.maxY - 1, width: SCREENWIDTH - 60, height: 1))
+        bottomLine.backgroundColor = LINECOLOR
         addSubview(bottomLine)
         
     }

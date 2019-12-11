@@ -16,17 +16,17 @@ class ASGame2TableViewCell: UITableViewCell {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        let headView = UIView(frame: CGRect(x: 0, y: 10, width: screenWidth, height: 30))
+        let headView = UIView(frame: CGRect(x: 0, y: 10, width: SCREENWIDTH, height: 30))
         
         let headLabel = UILabel(frame: CGRect(x: 30, y: 0, width: 230, height: 30))
         headLabel.text = "今天是腊月廿三，小年"
         headLabel.font = UIFont.boldSystemFont(ofSize: 20)
         headView.addSubview(headLabel)
         
-        let allLabel = UILabel(frame: CGRect(x: screenWidth - 85, y: 0, width: 60, height: 30))
+        let allLabel = UILabel(frame: CGRect(x: SCREENWIDTH - 85, y: 0, width: 60, height: 30))
         allLabel.text = "查看全部"
         allLabel.font = UIFont.systemFont(ofSize: 14)
-        allLabel.textColor = blueColor
+        allLabel.textColor = BLUECOLOR
         headView.addSubview(headLabel)
         headView.addSubview(allLabel)
 
@@ -40,7 +40,7 @@ class ASGame2TableViewCell: UITableViewCell {
         layout.sectionInset = UIEdgeInsetsMake(0, 30, 0, 30)
         layout.scrollDirection = .horizontal
         
-        collectionV = UICollectionView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 400), collectionViewLayout: layout)
+        collectionV = UICollectionView(frame: CGRect(x: 0, y: 0, width: SCREENWIDTH, height: 400), collectionViewLayout: layout)
         collectionV.delegate = self
         collectionV.dataSource = self
         collectionV.backgroundColor = .clear

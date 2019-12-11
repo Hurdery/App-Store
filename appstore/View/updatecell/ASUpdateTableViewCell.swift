@@ -10,7 +10,7 @@
 import UIKit
 
 class ASUpdateTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var updateDes: UILabel!
     @IBOutlet weak var updateName: UILabel!
     override func awakeFromNib() {

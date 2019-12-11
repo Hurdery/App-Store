@@ -27,6 +27,11 @@ class ASTabBarViewController: UITabBarController {
 
     }
     
+    
+    /// 咱也不知道 就想写个注释
+    /// - Parameter VC: <#VC description#>
+    /// - Parameter title: <#title description#>
+    /// - Parameter imageName: <#imageName description#>
     private func creatNavController(VC: UIViewController, title: String, imageName: String) {
         
         VC.title = title

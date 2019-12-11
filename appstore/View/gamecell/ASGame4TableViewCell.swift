@@ -39,7 +39,7 @@ extension ASGame4TableViewCell: UITableViewDelegate, UITableViewDataSource {
             cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         cell?.textLabel?.text = ["蒸煮油煎炸炒熬", "蒸油煮煎炸炒熬", "蒸煎煮油炸炒熬", "蒸炸煮油煎炒熬", "蒸炒煮油煎炸熬", "蒸煮熬油煎炸炒"][indexPath.row]
-        cell?.textLabel?.textColor = blueColor
+        cell?.textLabel?.textColor = BLUECOLOR
         cell?.imageView?.image = UIImage(named: "火锅")
         return cell!
         

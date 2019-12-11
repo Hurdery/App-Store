@@ -29,8 +29,8 @@ class ASLargeSearchView: UIView, UITextFieldDelegate {
         searchLabel.text = "Search"
         addSubview(searchLabel)
         
-        searchTf = UITextField(frame: CGRect(x: 0, y: searchLabel.frame.maxY + 10, width: screenWidth - 60, height: 40))
-        searchTf.backgroundColor = commonColor
+        searchTf = UITextField(frame: CGRect(x: 0, y: searchLabel.frame.maxY + 10, width: SCREENWIDTH - 60, height: 40))
+        searchTf.backgroundColor = COMMONCOLOR
         AppUtils.sharedAppUtils._clipsViewCorner(searchTf, radius: 10)
         searchTf.placeholder = "App Store"
         searchTf.leftView = UIImageView(image: UIImage(named: "searchtf"))

@@ -1,18 +1,18 @@
 //
-//  ASHeadReusableView.swift
+//  ASDetail_8CollectionViewCell.swift
 //  appstore
 //
-//  Created by guazhac on 2019/1/28.
+//  Created by admin on 2019/12/6.
 //  Copyright © 2019 st. All rights reserved.
 //
 
 import UIKit
 
-class ASHeadReusableView: UICollectionReusableView {
+class ASDetail_8CollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
+
 }

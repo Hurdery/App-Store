@@ -14,7 +14,7 @@ class ASSearchViewController: ASBaseViewController, searchTfDelegate, cancelBtnD
     
     private lazy var searchNav: ASNavSearchView = {
        
-        let searchNav = ASNavSearchView(frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT, width: Int(screenWidth), height: NAVIGATION_BAR_HEIGHT))
+        let searchNav = ASNavSearchView(frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT, width: Int(SCREENWIDTH), height: NAVIGATION_BAR_HEIGHT))
         print(NAVIGATION_BAR_HEIGHT)
         searchNav.isHidden = true
         return searchNav
@@ -23,7 +23,7 @@ class ASSearchViewController: ASBaseViewController, searchTfDelegate, cancelBtnD
     
     private lazy var maskV: UIView = {
         
-        let maskV = UIView(frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT, width: Int(screenWidth), height: Int(screenHeight - CGFloat(NAVIGATION_BAR_HEIGHT))))
+        let maskV = UIView(frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT, width: Int(SCREENWIDTH), height: Int(SCREENHEIGHT - CGFloat(NAVIGATION_BAR_HEIGHT))))
         maskV.backgroundColor = UIColor(red: 56.0 / 255.0, green: 56.0 / 255.0, blue: 56.0 / 255.0, alpha: 0.6)
         maskV.isHidden = true
         return maskV
@@ -68,7 +68,7 @@ class ASSearchViewController: ASBaseViewController, searchTfDelegate, cancelBtnD
         self.tableV.estimatedRowHeight = 50
         self.tableV.rowHeight = UITableViewAutomaticDimension
         view.addSubview(self.tableV)
-        self.tableV.frame = CGRect(x: 20, y: CGFloat(NAVIGATION_BAR_HEIGHT), width: screenWidth - 40, height: screenHeight - CGFloat(NAVIGATION_BAR_HEIGHT))
+        self.tableV.frame = CGRect(x: 20, y: CGFloat(NAVIGATION_BAR_HEIGHT), width: SCREENWIDTH - 40, height: SCREENHEIGHT - CGFloat(NAVIGATION_BAR_HEIGHT))
     }
 }
 
@@ -80,6 +80,8 @@ extension ASSearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
+            
+            
             var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
             if cell == nil {
                 cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
@@ -94,11 +96,16 @@ extension ASSearchViewController: UITableViewDelegate, UITableViewDataSource {
                 cell = UITableViewCell(style: .default, reuseIdentifier: "cell1")
             }
             cell?.textLabel?.text = ["二十三，糖瓜粘", "二十四，扫房子", "二十五，磨豆腐", "二十六，炖羊肉", "二十七，宰公鸡", "二十八，把面发", "二十九，蒸馒头", "三十晚上闹一宿", "大年初一扭一扭"][indexPath.row - 1]
-            cell?.textLabel?.textColor = blueColor
+            cell?.textLabel?.textColor = BLUECOLOR
             return cell!
+            
         }
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(ASDetailViewController(), animated: true)
+    }
 }
 

@@ -13,7 +13,6 @@ class twoTableViewCell: UITableViewCell {
     var backV: UIView!
     var collectionV: UICollectionView!
     var page: Int = 0
-    var colorAry: [UIColor] = []
     var collectionAry: [UICollectionView] = []
     var itemClickBlock: (() -> Void)?
     
@@ -21,8 +20,7 @@ class twoTableViewCell: UITableViewCell {
     
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        backV = UIView(frame: CGRect(x: 20, y: 10, width: screenWidth - 40, height: 500))
-//        backV.backgroundColor = UIColor.white
+        backV = UIView(frame: CGRect(x: 20, y: 10, width: SCREENWIDTH - 40, height: 500))
         backV.backgroundColor = UIColor.init(red: 243/255.0, green: 243/255.0, blue: 243/255.0, alpha: 1)
         backV.layer.masksToBounds = true
         backV.layer.cornerRadius = 15
@@ -47,7 +45,7 @@ class twoTableViewCell: UITableViewCell {
         let cheight = 115
         
         for index in 0...2 {
-            let randomColor = UIColor(red: CGFloat(arc4random()%256)/255.0, green: CGFloat(arc4random()%256)/255.0, blue: CGFloat(arc4random()%256)/255.0, alpha: 1.0)
+                      
             collectionV = UICollectionView(frame: CGRect(x: 0, y: Int(ablabel.frame.maxY) + 20 + index * (cheight + 10), width: Int(backV.frame.size.width ), height: cheight), collectionViewLayout: layout)
             collectionV.delegate = self
             collectionV.dataSource = self
@@ -58,12 +56,12 @@ class twoTableViewCell: UITableViewCell {
             collectionV.isScrollEnabled = false;
             backV.addSubview(collectionV)
             collectionAry.append(collectionV)
-            colorAry.append(randomColor)
             collectionV.register(UICollectionViewCell.self, forCellWithReuseIdentifier: index.description)
         }
         
+
         let timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(startAutoScroll), userInfo: nil, repeats: true)
-        RunLoop.main.add(timer, forMode: .UITrackingRunLoopMode)
+        RunLoop.main.add(timer, forMode: RunLoopMode.UITrackingRunLoopMode)
         
     }
     
@@ -97,17 +95,17 @@ class twoTableViewCell: UITableViewCell {
       
           case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionView.tag.description, for: indexPath)
-            cell.backgroundColor = colorAry[collectionView.tag]
+            cell.backgroundColor = UIColor(red: CGFloat(arc4random()%(UInt32)(256 + indexPath.item))/255.0, green: CGFloat(arc4random()%256)/255.0, blue: CGFloat(arc4random()%256)/255.0, alpha: 1.0)
             cell.layer.cornerRadius = 10
             return cell
           case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionView.tag.description, for: indexPath)
-            cell.backgroundColor = colorAry[collectionView.tag]
+            cell.backgroundColor = UIColor(red: CGFloat(arc4random()%256)/255.0, green: CGFloat(arc4random()%(UInt32)(256 + indexPath.item))/255.0, blue: CGFloat(arc4random()%256)/255.0, alpha: 1.0)
             cell.layer.cornerRadius = 10
             return cell
           case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionView.tag.description, for: indexPath)
-            cell.backgroundColor = colorAry[collectionView.tag]
+            cell.backgroundColor = UIColor(red: CGFloat(arc4random()%256)/255.0, green: CGFloat(arc4random()%256)/255.0, blue: CGFloat(arc4random()%(UInt32)(256 + indexPath.item))/255.0, alpha: 1.0)
             cell.layer.cornerRadius = 10
             return cell
            default:

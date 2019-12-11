@@ -12,16 +12,18 @@ import UIKit
 /// 不需要导航栏
 class ASTodayViewController: UIViewController {
 
+    
+    /// 自定义头部
    private lazy var largeTitleView: ASLargeTitleView = {
         
-        let largeTitleView = ASLargeTitleView(frame: CGRect(x: 0, y: 0, width: Int(screenWidth), height: NAVIGATION_BAR_HEIGHT))
+        let largeTitleView = ASLargeTitleView(frame: CGRect(x: 0, y: 0, width: Int(SCREENWIDTH), height: NAVIGATION_BAR_HEIGHT))
         return largeTitleView
         
     }()
     
   private lazy var tableV: UITableView = {
         
-        let tableV = UITableView(frame: CGRect(x: 0, y: CGFloat(STATUS_BAR_HEIGHT), width: screenWidth, height: screenHeight - CGFloat(NAVIGATION_BAR_HEIGHT)), style: .plain)
+        let tableV = UITableView(frame: CGRect(x: 0, y: CGFloat(STATUS_BAR_HEIGHT), width: SCREENWIDTH, height: SCREENHEIGHT - CGFloat(NAVIGATION_BAR_HEIGHT)), style: .plain)
         tableV.tableFooterView = UIView()
         return tableV
         
@@ -35,7 +37,7 @@ class ASTodayViewController: UIViewController {
     }
     
     func setUI() {
-        
+        //仿加载等待框
         showActivityIndicator()
         
         self.tableV.delegate = self
@@ -49,6 +51,8 @@ class ASTodayViewController: UIViewController {
         
     }
     
+    
+    /// a 轮子
     func showActivityIndicator() {
         
         let ai = UIActivityIndicatorView(activityIndicatorStyle: .gray)
@@ -56,7 +60,8 @@ class ASTodayViewController: UIViewController {
         view.addSubview(ai)
         ai.startAnimating()
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+        //莫慌
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             ai.stopAnimating()
             ai.hidesWhenStopped = true
             self.view.addSubview(self.tableV)
@@ -79,6 +84,7 @@ extension ASTodayViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        //两种样式
         if indexPath.row == 1 {
             var cell = tableView.dequeueReusableCell(withIdentifier: "two") as? twoTableViewCell
             if cell == nil {
@@ -105,6 +111,7 @@ extension ASTodayViewController: UITableViewDelegate, UITableViewDataSource {
     /// 添加点按动画 有更好的实现效果可联系作者qq: 1589353390，共同进步
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let cell = tableView.cellForRow(at: indexPath)
         
         if (cell?.isKind(of: oneTableViewCell.self))! {
@@ -126,6 +133,6 @@ extension ASTodayViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 520
     }
-    
+
 }
 

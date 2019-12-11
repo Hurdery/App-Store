@@ -17,12 +17,12 @@ class ASGame1TableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: screenWidth - 60, height: 480)
+        layout.itemSize = CGSize(width: SCREENWIDTH - 60, height: 480)
         layout.minimumLineSpacing = 10
         layout.sectionInset = UIEdgeInsetsMake(0, 30, 0, 30)
         layout.scrollDirection = .horizontal
         
-        collectionV = UICollectionView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 480), collectionViewLayout: layout)
+        collectionV = UICollectionView(frame: CGRect(x: 0, y: 0, width: SCREENWIDTH, height: 480), collectionViewLayout: layout)
         collectionV.delegate = self
         collectionV.dataSource = self
         collectionV.backgroundColor = .clear

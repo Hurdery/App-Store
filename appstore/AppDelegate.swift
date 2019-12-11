@@ -3,7 +3,7 @@
 //  appstore
 //
 //  Created by guazhac on 2019/1/16.
-//  Copyright © 2019 st. All rights reserved.
+//  Copyright © 2019 CB_MD. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+        sleep(2)
         window?.rootViewController = ASTabBarViewController()
         
         return true

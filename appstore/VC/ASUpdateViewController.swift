@@ -56,5 +56,8 @@ extension ASUpdateViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(ASDetailViewController(), animated: true)
+    }
     
 }

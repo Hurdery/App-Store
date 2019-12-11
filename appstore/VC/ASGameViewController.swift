@@ -53,17 +53,17 @@ extension ASGameViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
+            
             let cell = ASGameTableViewCell(style: .default, reuseIdentifier: "ASGameTableViewCell")
+            cell.delegate = self
             return cell
             
         } else if indexPath.row == 1 {
             
             var cell = tableView.dequeueReusableCell(withIdentifier: indexPath.row.description)
-            print(indexPath.row.description)
             if cell == nil {
                 cell = ASGame1TableViewCell(style: .default, reuseIdentifier: indexPath.row.description)
                 print(cell!)
-
             }
             return cell!
             
@@ -71,20 +71,27 @@ extension ASGameViewController: UITableViewDelegate, UITableViewDataSource {
             
             let cell = ASGame2TableViewCell(style: .default, reuseIdentifier: "ASGame2TableViewCell")
             return cell
-        }
-        else if indexPath.row == 3 {
+            
+            
+        } else if indexPath.row == 3 {
+            
             let cell = Bundle.main.loadNibNamed("ASGame3TableViewCell", owner: nil, options: nil)?.first as! ASGame3TableViewCell
             return cell
             
         } else if indexPath.row == 4 {
+            
             let cell = Bundle.main.loadNibNamed("ASGame4TableViewCell", owner: nil, options: nil)?.first as! ASGame4TableViewCell
+            cell.selectionStyle = .none
             return cell
             
-        }else if indexPath.row == 9 {
+        } else if indexPath.row == 9 {
+            
             let cell = Bundle.main.loadNibNamed("ASGame5TableViewCell", owner: nil, options: nil)?.first as! ASGame5TableViewCell
+            cell.selectionStyle = .none
             return cell
             
         } else  {
+            
             var cell = tableView.dequeueReusableCell(withIdentifier: indexPath.row.description)
             if cell == nil {
                 cell = ASGame1TableViewCell(style: .default, reuseIdentifier: indexPath.row.description)
@@ -104,6 +111,16 @@ extension ASGameViewController: UITableViewDelegate, UITableViewDataSource {
             return 580
         }
        return 400
+    }
+    
+}
+
+extension ASGameViewController: ASGameCollectionViewCellDelegate {
+    
+    func didClickASGameCollectionViewCellItem() {
+        
+        navigationController?.pushViewController(ASDetailViewController(), animated: true)
+
     }
     
 }

@@ -24,8 +24,8 @@ class ASNavSearchView: UIView, UITextFieldDelegate {
         super.init(frame: frame)
 //        backgroundColor = .brown
 
-        searchTf = UITextField(frame: CGRect(x: 20, y: STATUS_BAR_HEIGHT , width: Int(screenWidth - 100), height: 40))
-        searchTf.backgroundColor = commonColor
+        searchTf = UITextField(frame: CGRect(x: 20, y: STATUS_BAR_HEIGHT , width: Int(SCREENWIDTH - 100), height: 40))
+        searchTf.backgroundColor = COMMONCOLOR
         AppUtils.sharedAppUtils._clipsViewCorner(searchTf, radius: 10)
         searchTf.placeholder = "App Store"
         searchTf.leftView = UIImageView(image: UIImage(named: "searchtf"))
@@ -35,9 +35,9 @@ class ASNavSearchView: UIView, UITextFieldDelegate {
         addSubview(searchTf)
         
         let cancelBtn = UIButton(type: .custom)
-        cancelBtn.frame = CGRect(x: screenWidth - 50, y: searchTf.center.y - 10, width: 40, height: 20)
+        cancelBtn.frame = CGRect(x: SCREENWIDTH - 50, y: searchTf.center.y - 10, width: 40, height: 20)
         cancelBtn.setTitle("取消", for: .normal)
-        cancelBtn.setTitleColor(blueColor, for: .normal)
+        cancelBtn.setTitleColor(BLUECOLOR, for: .normal)
         cancelBtn.addTarget(self, action: #selector(cancelClick), for: .touchUpInside)
         addSubview(cancelBtn)
         

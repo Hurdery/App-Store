@@ -39,7 +39,7 @@ class ASGame5TableViewCell: UITableViewCell {
                 cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
             }
             cell?.textLabel?.text = ["绑定支付宝、微信支付或银联卡", "App Store 家长指南", "进一步了解App内购买项目", "儿童类App和游戏", "关于个性化", "轻松上手 App Store"][indexPath.row]
-            cell?.textLabel?.textColor = blueColor
+            cell?.textLabel?.textColor = BLUECOLOR
             cell?.imageView?.image = UIImage(named: "火锅")
             return cell!
             
